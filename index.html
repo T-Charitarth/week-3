@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Info</title>
+    <style>
+        body{
+            text-align: center;
+            align-items: center;
+            background-color: beige;
+        }
+        table
+        {
+            text-align: center;
+            border: 2px solid gray;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #print
+        {
+            /* border: 2px solid gray; */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button
+        {
+            font-size: larger;
+        }
+        #chart
+        {
+            margin-left: auto;
+            margin-right: auto;
+            height: 700px;
+            width: 500px;
+        }
+        #mychart
+        {
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Weather Details</h2><br>
+    <table>
+        <tr>
+            <td><h3>City_name : </h3></td>
+            <td><input type="text" name="city_name" id="city_name"></td>
+        </tr>
+    </table>
+    <br>
+    <h2><button type="submit" onclick="ABC()">submit</button></h2>
+    <br>
+    <div id="print">
+    </div>
+    <br>
+    <br>
+    <h2>Country : </h2>
+    <div id="print1">
+    </div>
+    <div id="chart">
+        <canvas id="myChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
